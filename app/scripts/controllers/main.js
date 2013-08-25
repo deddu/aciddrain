@@ -4,12 +4,12 @@ angular.module('webApp')
   .controller('MainCtrl', function ($scope) {
   	//here's a list of dictionaries of comments entries: keys (atm) are user and text
     $scope.rants = [{
-    	user:"geppetto",
-    	text:"my wood took life and walk away from me"
+    	user:"Geppetto",
+    	text:"I hope my stupid kid get eaten by a whale."
     },
     {
     	user:"Mario",
-    	text:"that silly **ch got kidnapped again."
+    	text:"can't believe that silly **ch got kidnapped again."
     }
     ];
     $scope.update = function(){ 
