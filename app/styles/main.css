@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P|Bubbler+One);
+
+body {
+    background: #fafafa;
+    background-image:url('../images/Uburn.png');
+    background-size: cover;
+    font-family: 'Helvetica neue', sans-serif;
+    color: #333;
+}
+
+.hello-box h1{
+    padding: 5%;
+    text-align:center;
+    font-family: 'Press Start 2P', cursive;
+    color: #bbb;
+}
+
+.hello-box{
+     padding: 5%;
+     font-family: 'Bubbler One', sans-serif;
+}

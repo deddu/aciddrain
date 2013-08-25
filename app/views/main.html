@@ -1,0 +1,24 @@
+<div class="container-fluid">
+	<section class="intro">
+		<div class="row-fluid hello-box">
+			<div class="well">
+				<h1>AciDDrain</h1>
+				<p class='lead'>Pleased to meet you, {{new_rant.user}}.</p>
+				<form novalidate name="new_rant">
+				<input class="form-control" type="name" ng-model="new_rant.user" placeholder="ciao" name="user"></input>
+				<p>release your acids and complain about what you want.</p>
+				<input class="form-control" type="text-area" name="text" ng-model="new_rant.text"></input>
+				<button class="btn btn-default" ng-click="update()" >Submit</button>
+			</form>
+			</div>
+		</div> <!-- row -->
+	</section>
+	<section class="last-complaints">
+		<div class="row-fluid section1" ng-repeat="rant in reverse(rants)">
+			<div class="stuff well">
+				<p class="lead"> from:	{{rant.user}}	</p>
+				<p> {{rant.text}}</p>
+			</div>
+		</div>
+	</section>
+</div><!-- container-fluid -->
