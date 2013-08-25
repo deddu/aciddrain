@@ -13,7 +13,7 @@ angular.module('webApp')
     }
     ];
     $scope.update = function(){ 
-    	var new_ = angular.copy($scope.new_rant);
-    	$scope.rants.push(new_);};
+    	
+    	$scope.rants.push(angular.copy($scope.new_rant));};
     $scope.reverse= function(arr){ return [].concat(arr).reverse();};
   });
